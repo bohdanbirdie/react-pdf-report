@@ -1,0 +1,11 @@
+{
+  "name": "react-pdf-report",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bohdanbirdie/react-pdf-report.git",
+  "author": "bohdanbirdie <voja4ok@yahoo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
