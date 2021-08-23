@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  web:
+    container_name: "react-pdf-report"
+    init: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # https://github.com/website-checks/website-checks/issues/48
+    # https://github.com/puppeteer/puppeteer/issues/809#issuecomment-331002207
+    # https://github.com/puppeteer/puppeteer/blob/a22aa5deac9fea29433908d49018105297524299/docs/troubleshooting.md#running-puppeteer-in-docker
+    cap_add:
+      - SYS_ADMIN
+    ports:
+      - '5000:5000'
+    environment:
+      NODE_ENV: production

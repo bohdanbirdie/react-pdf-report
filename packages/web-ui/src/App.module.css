@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-container {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 50%;
+  margin: 10px 5px;
+}
+
+.button {
+  width: auto;
+}
+
+.report-preview {
+  box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+  width: 21cm;
+  height: 29.7cm; 
+}

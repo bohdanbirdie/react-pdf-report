@@ -1,11 +1,19 @@
 {
-  "name": "react-pdf-report",
+  "name": "react-pdf-report-repo",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/bohdanbirdie/react-pdf-report.git",
   "author": "bohdanbirdie <voja4ok@yahoo.com>",
   "license": "MIT",
+  "private": true,
   "devDependencies": {
     "lerna": "^4.0.0"
-  }
+  },
+  "scripts": {
+    "bootstrap": "npx lerna bootstrap && npx lerna run build --scope @react-pdf/components",
+    "start": "npx lerna run start --scope react-pdf-report --scope web-ui"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
